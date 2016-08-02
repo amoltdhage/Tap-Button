@@ -10,6 +10,16 @@
 
 @interface ViewController : UIViewController
 
+{
+    UILongPressGestureRecognizer *longPress;
+}
+
+
+@property (weak, nonatomic) IBOutlet UILabel *label_time;
+- (IBAction)ButtonTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *Label_FinalTime;
+- (IBAction)ResetButtonTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *button_tap;
 
 @end
 
